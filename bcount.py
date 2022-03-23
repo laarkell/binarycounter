@@ -2,7 +2,7 @@
 import RPi.GPIO as GPIO
 import time
 
-print "=== Binary counter ==="
+print ("=== Binary counter ===")
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD) # access pins by their numbers	
@@ -18,7 +18,7 @@ GPIO.setup(19, GPIO.OUT)
 GPIO.setup(21, GPIO.OUT) # pin 21 for bit 7
 
 cnt = 0
-print "Press Ctrl-C to exit"
+print ("Press Ctrl-C to exit")
 
 try:
 	while True:
